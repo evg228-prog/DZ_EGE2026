@@ -27,4 +27,4 @@ for x in range(0, 96):
 update()
 done()
 
-# 374
+# 374 (17×22)
