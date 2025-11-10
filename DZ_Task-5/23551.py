@@ -8,6 +8,8 @@ for N in range(1, 100000):
     if R < 30:
         print(N)
 
+# 6
+
 
 
 
