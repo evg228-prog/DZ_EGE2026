@@ -17,3 +17,5 @@ for N in range(1, 10000):
     if R < 598:
         ans.append(N)
 print(max(ans))
+
+# 63
