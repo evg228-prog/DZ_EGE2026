@@ -1,6 +1,6 @@
 from re import *
 
-with open(r'24_1866.txt') as file:
+with open(r'files/24_1866.txt') as file:
     data = file.readline()
 
 pattern = r'(?<=(ad|da)).+?(?=(ad|da))'

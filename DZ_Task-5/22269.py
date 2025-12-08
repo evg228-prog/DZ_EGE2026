@@ -17,8 +17,15 @@ for N in range(1, 100_000):
     else:
         R = '3' + R[1:] + '42'
     R = int(R, 5)
-    if R == 497:
-        ans.append(N)
-print(min(ans))
+    if R < 1922:
+        ans.append(R)
+
+max_R = max(ans)
+all_N = []
+for i in ans:
+    if max_R == i:
+        all_N.append(i[1])
+print(min(all_N))
+
 
 # 9

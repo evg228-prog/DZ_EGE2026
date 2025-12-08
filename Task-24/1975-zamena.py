@@ -1,6 +1,6 @@
 from os.path import split
 
-with open(r'24_1975.txt') as file:
+with open(r'files/24_1975.txt') as file:
     data = file.readline()
 
 while 'PP' in data:

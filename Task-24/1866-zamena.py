@@ -1,4 +1,4 @@
-with open(r'24_1866.txt') as file:
+with open(r'files/24_1866.txt') as file:
     data = file.readline()
 
 data = data.replace('ad', 'a d')
