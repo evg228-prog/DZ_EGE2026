@@ -1,6 +1,6 @@
 from itertools import permutations
 
-graph = 'ad de eg gc cf ba bf be'.split()
+graph = 'ad de eg gc cf ba bf be fa'.split()
 matrix = '37 367 125 56 34 247 126'.split()
 
 print(*range(1, 8))
