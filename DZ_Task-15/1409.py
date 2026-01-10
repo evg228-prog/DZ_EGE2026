@@ -7,7 +7,7 @@ def f(x):
     A = A1 <= x <= A2
     return (not A) <= ((P and Q) <= R)
 
-line = range(1, 61)
+line = [x + eps for x in {2, 3, 4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 24, 27, 30, 36, 48, 60} for eps in (0, 0.1, 0.9)]
 
 ans = []
 for A1, A2 in combinations(line, 2):
