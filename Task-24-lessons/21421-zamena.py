@@ -23,4 +23,18 @@ for num in data:
             ans = max(ans, len(num))
 print(ans)
 
+#####################################################
+
+alph = digits + ascii_uppercase
+
+for i in alph[12:]:
+    data = data.replace(i, ' ')
+
+data = data.split()
+
+ans = 0
+for i in data:
+    ans = max(ans, len(i.lstrip('0').rstrip(alph[1:12:2])))
+print(ans)
+
 # 19
