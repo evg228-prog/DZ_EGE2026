@@ -12,4 +12,4 @@ for i in range(len(data) - 80):
 
 print(ans)
 
-# 2379v
+# 2379
