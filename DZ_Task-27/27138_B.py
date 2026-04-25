@@ -31,10 +31,16 @@ clusters = sorted(clusters, key=len)
 cluster_med = clusters[1]
 cluster_med_X = max(cluster[0] for cluster in cluster_med)
 
-cluster_anti_1 = center(clusters[0], clusters[1], clusters[2])
-cluster_anti_2 = center(clusters[1], clusters[0], clusters[2])
-cluster_anti_3 = center(clusters[2], clusters[0], clusters[1])
+res = []
+for i in range(len(clusters)):
+    current_cluster = clusters[i]
+    other_clusters = clusters[:i] + clusters[i + 1:]
+    other_clusters = [d for i in range(len(other_clusters)) for d in other_clusters[i]]
+    for dot in current_cluster:
+        sum_dist = sum(dist(dot, d) for d in other_clusters)
+        res.append([sum_dist, dot])
+B2 = sum(max(res)[1])
 
-cluster_anti = max(cluster_anti_1, cluster_anti_2, cluster_anti_3)[1]
+print(abs(int(cluster_med_X * 10000)), abs(int(B2 * 10000)))
 
-print(abs(int(cluster_med_X * 10000)), abs(int(sum(cluster_anti) * 10000)))
+# 434245 275003
