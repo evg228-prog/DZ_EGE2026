@@ -1,4 +1,3 @@
-from string import *
 from re import *
 with open(r'.\files\24_26551.txt') as file:
     data = file.readline()
