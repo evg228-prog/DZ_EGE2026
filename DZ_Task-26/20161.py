@@ -24,3 +24,4 @@ for x in ne_chet[len_sale_ne_chet:]:
 res = sale_chet + sale_ne_chet
 print(res, abs((sum(chet) - sale_chet) - (sum(ne_chet) - sale_ne_chet)))
 
+# 4151899 464997
