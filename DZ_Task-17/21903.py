@@ -11,3 +11,5 @@ for num1, num2, num3 in zip(data, data[1:], data[2:]):
     if u1 and u2:
         ans.append(min(num1, num2, num3) * max(num1, num2, num3))
 print(len(ans), min(ans))
+
+# 3507 863808
