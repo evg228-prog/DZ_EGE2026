@@ -10,7 +10,7 @@ lineA = [13, 17, 19, 23]
 linex = [14, 18, 20]
 
 ans = []
-for A1, A2 in combinations(linex, 2):
+for A1, A2 in combinations(lineA, 2):
     if all(f(x) for x in linex):
         ans.append(A2 - A1)
 print(max(ans))
